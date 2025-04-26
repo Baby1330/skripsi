@@ -17,6 +17,7 @@ composer create-project --prefer-dist raugadh/fila-starter .
 php artisan migrate
 
 # EDIT .env
+```php
 APP_NAME="SKRIPSI"
 APP_ENV=local
 APP_KEY=base64:PNhOR3d36Q3G57C9Bq2dPJ/nb8onJWi/o09giiRltn8=
@@ -33,18 +34,24 @@ DB_PORT=3306
 DB_DATABASE=db_skripsi
 DB_USERNAME=root
 DB_PASSWORD=p455w0rd
+```
 
 # AKSES STORAGE
+```php
 php artisan storage:link
 chown -R www-data:www-data storage/*
 chown -R www-data:www-data storage/
 chown -R www-data:www-data bootstrap/*
 chown -R www-data:www-data bootstrap/
+```
 
 # BIKIN MODEL MIGRATION SEEDER
+```php
 php artisan make:model Sales -ms
 php artisan make:model ClientSales -ms
-
+```
 # BIKIN RESOURCE FILAMENT
+```php
 php artisan make:filament-resource Sales --generate
 php artisan make:filament-resource ClientSales --generate
+```
