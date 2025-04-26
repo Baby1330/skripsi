@@ -1,20 +1,32 @@
 # UP DOCKER
+```php
 docker compose up -d --build
+```
 
 # DOWN DOCKER 
+```php
 docker compose down
+```
 
 # CLEAR CONTAINER
+```php
 docker container prune
+```
 
 # EKSEKUSI DOCKER
+```php
 docker exec -it skripsi bash
+```
 
 # MEMBUAT FILAMENT
+```php
 composer create-project --prefer-dist raugadh/fila-starter .
+```
 
 # MELAKUKAN MIGRATION
+```php
 php artisan migrate
+```
 
 # EDIT .env
 ```php
